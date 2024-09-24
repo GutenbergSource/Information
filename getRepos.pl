@@ -622,6 +622,13 @@ getRepo('73413-Bleek-Reynard-the-fox-in-South-Africa');
 getRepo('73418-Curtin-Myths-of-the-Modocs');
 getRepo('73533-Bellows-The-poetic-Edda');
 getRepo('73584-Maimonides-The-guide-for-the-perplexed');
+getRepo('73800-Herlin-Zuriname');
+getRepo('73848-Russell-The-hero-of-the-Filipinos');
+getRepo('73896-Westenenk-Mensch-en-tijger');
+getRepo('74056-Duka-Csoma-de-Koros');
+getRepo('74172-Swanton-Haida-texts-and-myths');
+getRepo('74269-Leblanc-Arsene-Lupin-super-sleuth');
+getRepo('74314-Keith-The-Sanskrit-drama');
 getRepo('8299-Fansler-Filipino-Popular-Tales');
 getRepo('8468-Bilderdijk-De-ondergang-der-Eerste-Wareld');
 
