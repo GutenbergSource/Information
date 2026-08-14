@@ -1,5 +1,5 @@
 
-use strict;
+use v5.36;
 use Cwd;
 use File::chdir;
 
@@ -688,12 +688,15 @@ getRepo('77312-Stebbing-Zoo-n-lastige-jongen');
 getRepo('77522-Thackeray-Yellowplush');
 getRepo('77525-Scott-Guy-Mannering');
 getRepo('77583-Thackeray-Arthur-Pendennis');
+getRepo('77684-Scott-De-oudheidkenner');
+getRepo('77745-London-Drie-harten');
+getRepo('77777-Zeller-The-Stoics-Epicureans-and-Sceptics');
+getRepo('78354-Aimard-De-goudzoekers');
+getRepo('78356-Radcliffe-Brown-The-Andaman-islanders');
 getRepo('8299-Fansler-Filipino-Popular-Tales');
 getRepo('8468-Bilderdijk-De-ondergang-der-Eerste-Wareld');
 
-sub getRepo($) {
-    my $repo = shift;
-
+sub getRepo($repo) {
     if (!-e $repo) {
         system ("git clone https://github.com/GutenbergSource/$repo.git\n");
     } elsif (-d $repo) {
