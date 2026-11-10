@@ -693,18 +693,26 @@ getRepo('77745-London-Drie-harten');
 getRepo('77777-Zeller-The-Stoics-Epicureans-and-Sceptics');
 getRepo('78354-Aimard-De-goudzoekers');
 getRepo('78356-Radcliffe-Brown-The-Andaman-islanders');
+getRepo('78959-Teunissen-Nederlandsche-Insecten');
+getRepo('78971-van-Berken-Regen-en-zonneschijn');
+getRepo('79379-Verne-Michael-Strogoff');
+getRepo('79578-Meyrink-Der-weisse-Dominikaner');
+getRepo('79719-Bos-Toon-van-t-veer');
+getRepo('79881-Caron-Beschrijvinge-van-Japan');
+getRepo('79929-Gorter-Mei');
+getRepo('79957-Verne-Het-zwarte-goud');
 getRepo('8299-Fansler-Filipino-Popular-Tales');
 getRepo('8468-Bilderdijk-De-ondergang-der-Eerste-Wareld');
 
 sub getRepo($repo) {
     if (!-e $repo) {
-        system ("git clone https://github.com/GutenbergSource/$repo.git\n");
+        system ('git', 'clone', "https://github.com/GutenbergSource/$repo.git");
     } elsif (-d $repo) {
         my $cwd = getcwd;
-        chdir ($repo);
-        system ("git clean -f -d -x\n");
-        system ("git reset --hard\n");
-        system ("git pull\n");
+        chdir $repo;
+        system ("git clean -f -d -x");
+        system ("git reset --hard");
+        system ("git pull");
         chdir $cwd;
     }
 }
